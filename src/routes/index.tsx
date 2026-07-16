@@ -57,6 +57,7 @@ function LandingPage() {
       <Hero />
       <SocialProof />
       <Services />
+      <Categories />
       <WhyUs />
       <Testimonials />
       <FAQ />

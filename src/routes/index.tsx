@@ -14,6 +14,14 @@ import {
   MessageCircle,
   CheckCircle2,
   ChevronDown,
+  HardHat,
+  Shirt,
+  Disc3,
+  Lightbulb,
+  Droplets,
+  Gauge,
+  Bike,
+  Package,
 } from "lucide-react";
 import heroMoto from "@/assets/hero-moto.jpg";
 

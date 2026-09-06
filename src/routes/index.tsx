@@ -554,49 +554,56 @@ function InfoRow({
 
 function Footer() {
   return (
-    <footer className="border-t border-border bg-card/40 py-10">
-      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-8 px-4 text-sm text-muted-foreground md:flex-row md:items-center">
-        <div className="flex flex-col items-center gap-1 md:items-start">
-          <p className="font-semibold text-foreground">
-            Carajás Moto Center — Marabá-PA
-          </p>
-          <p className="mt-1 hidden text-xs md:block">
-            © {new Date().getFullYear()} Todos os direitos reservados.
-          </p>
+    <footer className="border-t border-border bg-[#141212] py-16 text-zinc-400 dark:bg-card/40">
+      <div className="mx-auto flex max-w-6xl flex-col items-center gap-10 px-4">
+        <p className="text-base font-semibold text-zinc-100">
+          Carajás Moto Center — Marabá-PA
+        </p>
+
+        <div className="flex flex-col justify-center gap-4 sm:flex-row">
+          <div className="flex w-[280px] flex-col items-center gap-4 rounded-3xl border border-white/5 bg-[#1c1a1a] p-6 shadow-sm">
+            <div className="flex items-center gap-2 text-base font-semibold text-zinc-100">
+              <MapPin className="h-5 w-5 text-primary" />
+              <span>Endereço</span>
+            </div>
+            <div className="flex flex-col items-center text-sm font-light leading-relaxed">
+              <span>Av. Transamazônica, 1745</span>
+              <span>Cidade Nova, Marabá-PA</span>
+            </div>
+          </div>
+
+          <div className="flex w-[280px] flex-col items-center gap-4 rounded-3xl border border-white/5 bg-[#1c1a1a] p-6 shadow-sm">
+            <div className="flex items-center gap-2 text-base font-semibold text-zinc-100">
+              <Clock className="h-5 w-5 text-primary" />
+              <span>Horários</span>
+            </div>
+            <div className="flex flex-col items-center text-sm font-light leading-relaxed">
+              <span>Seg a Sex: 08:00 às 18:00</span>
+              <span>Sábados: 08:00 às 12:00</span>
+            </div>
+          </div>
         </div>
 
-        <div className="flex flex-col items-center gap-3 rounded-2xl border border-border/60 bg-background/50 px-6 py-4 shadow-sm md:flex-row md:gap-5 md:px-5 md:py-3">
-          <div className="flex items-center gap-2 font-semibold text-foreground">
-            <Clock className="h-4 w-4 text-primary" />
-            <span>Horários</span>
-          </div>
-          <div className="hidden h-6 w-px bg-border md:block" />
-          <div className="flex flex-col items-center gap-1 text-xs md:items-start">
-            <span>Seg a Sex: 08:00 às 18:00</span>
-            <span>Sábados: 08:00 às 12:00</span>
-          </div>
-        </div>
-
-        <div className="flex flex-col items-center gap-4 md:items-end">
-          <div className="flex items-center gap-4">
+        <div className="flex flex-col items-center gap-6">
+          <div className="flex items-center gap-6">
             <a
               href="https://instagram.com"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-1.5 transition hover:text-primary"
+              className="inline-flex items-center gap-2 text-sm transition hover:text-white"
             >
-              <Instagram className="h-4 w-4" /> Instagram
+              <Instagram className="h-5 w-5" /> Instagram
             </a>
             <a
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-1.5 transition hover:text-primary"
+              className="inline-flex items-center gap-2 text-sm transition hover:text-white"
             >
-              <MessageCircle className="h-4 w-4" /> WhatsApp
+              <MessageCircle className="h-5 w-5" /> WhatsApp
             </a>
           </div>
-          <p className="text-xs md:hidden">
+          <p className="text-xs">
             © {new Date().getFullYear()} Todos os direitos reservados.
           </p>
         </div>

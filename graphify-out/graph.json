@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T14:38:02.606129+00:00",
+  "generated_at": "2026-09-06T16:38:18.298099+00:00",
   "files": [
     {
       "path": "components.json",
@@ -34,6 +34,10 @@
       "bytes": 124
     },
     {
+      "path": ".lovasiri/sync.json",
+      "bytes": 80
+    },
+    {
       "path": "src/routeTree.gen.ts",
       "bytes": 1797
     },
@@ -59,7 +63,7 @@
     },
     {
       "path": "src/routes/index.tsx",
-      "bytes": 22437
+      "bytes": 23854
     },
     {
       "path": "src/routes/README.md",
@@ -410,10 +414,6 @@
     {
       "source": "src/routes/index.tsx",
       "target": "lucide-react"
-    },
-    {
-      "source": "src/routes/index.tsx",
-      "target": "@/assets/hero-moto.jpg"
     },
     {
       "source": "src/hooks/use-mobile.tsx",
